@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> FlexBox Demo</title>
+    <style>
+        body { padding: 2em; }
+
+        .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color:yellowgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: yellow;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .mainContainer{
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        .mainContainerItem{
+            text-align: left;
+            background:deepskyblue;
+        }
+        article{
+            padding: 10px;
+            margin: 10px;
+            background:pink;
+        }
+
+        .sideBarLeftItem{
+            background:grey;
+        }
+
+        .sideBarRightItem{
+            background: lightblue;
+        }
+        .sideBarItem {
+            flex: 1 0 0 ;
+            border: 1px solid yellow;
+        }
+        .mainContainerItem{
+            flex: 3 0px;
+        }
+        .sideBarLeftItem{
+            order: 1;
+        }
+        .mainContainerItem{
+            order: 2;
+        }
+        .sideBarRightItem{
+            order: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="headerContainer">HEADER - SAMPLE FLEXBOX EXAMPLE</header>
+    <div class="mainContainer">
+        <section class="mainContainerItem">
+            <article>
+                <h2>Data Science</h2>
+                <p>Data science is the field of study that combines domain expertise, programming skills,
+                and knowledge of mathematics and statistics to extract meaningful insights from data. 
+                Data science practitioners apply machine learning algorithms to numbers, text, images, video,
+                 audio, and more to produce artificial intelligence (AI) systems to perform tasks that ordinarily require human intelligence.
+                In turn, these systems generate insights which analysts and business users can translate into tangible business value.
+                More and more companies are coming to realize the importance of data science,
+                 AI, and machine learning. Regardless of industry or size, organizations that wish to remain competitive
+                 in the age of big data need to efficiently develop and implement data science capabilities or risk being left behind.
+            </article>
+            <article>
+                <h2>Machine Learning</h2>
+                <p>Machine Learning, as the name suggests, provides machines with the ability to learn autonomously based on experiences, observations and analysing patterns within a given data set without explicitly programming. When we write a program or a code for some specific purpose, we are actually writing a definite set of instructions which the machine will follow. 
+
+                    Whereas in machine learning, we input a data set through which the machine will learn by identifying and analysing the patterns in the data set and learn to take decisions autonomously based on its observations and learnings from the dataset. While Machine learning is a vast topic which will take more than a few articles and courses, today we will focus on machine learning basics, so that you will know what to expect when you dive into machine learning algorithms.
+                    
+                    Think of Facebook’s facial recognition algorithm which prompts you to tag photos whenever you upload a photo. Even voice assistants use machine learning to identify and service the user’s request. Tesla’s autopilot feature is another example.</article>
+            <article>
+                <h2>Artificail Intelligence</h2>
+                <p>Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by humans or animals. Leading AI textbooks define the field as the study of "intelligent agents": any system that perceives its environment and takes actions that maximize its chance of achieving its goals.[a] Some popular accounts use the term "artificial intelligence" to describe machines that mimic "cognitive" functions that humans associate with the human mind, such as "learning" and "problem solving", however this definition is rejected by major AI researchers.[b][c]
+
+                </article>
+        </section>
+    <sidebar class="sideBarItem sideBarLeftItem"> left side bar </sidebar>
+    <sidebar class="sideBarItem sideBarRightItem"> right side bar </sidebar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+</html> 
